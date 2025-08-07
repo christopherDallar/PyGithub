@@ -51,7 +51,9 @@ All classes inherit from :class:`github.GithubObject.GithubObject`.
 
 import logging
 
-from . import Auth
+import bincli.core.libraries.PyGithub.github as github
+
+from . import Auth, Rule, Ruleset
 from .AppAuthentication import AppAuthentication
 from .GithubException import (
     BadAttributeException,
@@ -99,6 +101,8 @@ __all__ = [
     "BadUserAgentException",
     "enable_console_debug_logging",
     "Github",
+    "Ruleset",
+    "Rule",
     "GithubException",
     "GithubIntegration",
     "GithubRetry",
