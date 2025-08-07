@@ -51,7 +51,7 @@ All classes inherit from :class:`github.GithubObject.GithubObject`.
 
 import logging
 
-import bincli.core.libraries.PyGithub.github as github
+import chcli.core.libraries.PyGithub.github as github
 
 from . import Auth, Rule, Ruleset
 from .AppAuthentication import AppAuthentication
